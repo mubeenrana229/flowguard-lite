@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>FlowGuard Lite</title>
+
+  <!-- Ethers.js -->
   <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="text-align:center; font-family:Arial; background:#0f172a; color:white;">
+<body>
 
-<h1>🚀 FlowGuard Lite</h1>
+<div class="container">
+  <h1>🚀 FlowGuard Lite</h1>
+  <p>Smart Crypto Automation</p>
 
-<button onclick="connectWallet()" style="padding:15px; font-size:18px;">
-  Connect Wallet
-</button>
+  <!-- Wallet -->
+  <button onclick="connectWallet()">🔗 Connect Wallet</button>
+  <p id="wallet"></p>
 
-<p id="wallet"></p>
+  <div class="card">
+    <h2>Select Action</h2>
+    <p>Live Crypto Smart Engine</p>
+
+    <select id="action">
+      <option value="Swap">Swap</option>
+      <option value="Stake">Stake</option>
+      <option value="Earn">Earn</option>
+    </select>
+
+    <button onclick="run()">Run Strategy</button>
+  </div>
+
+  <div id="result" class="result"></div>
+</div>
 
 <script src="script.js"></script>
 
