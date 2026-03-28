@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, #020617, #0f172a);
   color: white;
 }
 
@@ -10,42 +10,30 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 28px;
-}
-
 .card {
   background: #1e293b;
   padding: 20px;
-  border-radius: 15px;
   margin-top: 20px;
+  border-radius: 15px;
 }
 
-select {
+select, input {
   padding: 10px;
-  width: 80%;
   margin-top: 10px;
+  width: 80%;
   border-radius: 10px;
 }
 
 button {
-  margin-top: 15px;
   padding: 15px;
+  margin-top: 15px;
   width: 80%;
   background: #22c55e;
   border: none;
   border-radius: 10px;
-  font-size: 16px;
   color: white;
 }
 
-.result {
-  margin-top: 20px;
-  font-size: 18px;
-}
-
 #wallet {
-  margin-top: 10px;
-  font-size: 14px;
   color: #38bdf8;
 }

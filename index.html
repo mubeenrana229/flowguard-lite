@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>FlowGuard Lite</title>
-
-  <!-- Ethers.js -->
+  <title>FlowGuard Pro</title>
   <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
-
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
-  <h1>🚀 FlowGuard Lite</h1>
-  <p>Smart Crypto Automation</p>
+  <h1>🚀 FlowGuard Pro</h1>
 
-  <!-- Wallet -->
   <button onclick="connectWallet()">🔗 Connect Wallet</button>
   <p id="wallet"></p>
 
   <div class="card">
-    <h2>Select Action</h2>
-    <p>Live Crypto Smart Engine</p>
+    <h2>Swap Tokens</h2>
 
-    <select id="action">
-      <option value="Swap">Swap</option>
-      <option value="Stake">Stake</option>
-      <option value="Earn">Earn</option>
+    <select id="fromToken">
+      <option value="ETH">ETH</option>
+      <option value="USDT">USDT</option>
     </select>
 
-    <button onclick="run()">Run Strategy</button>
+    <select id="toToken">
+      <option value="DAI">DAI</option>
+      <option value="USDC">USDC</option>
+    </select>
+
+    <input id="amount" placeholder="Enter Amount (ETH)" />
+
+    <button onclick="swap()">Swap Now</button>
   </div>
 
-  <div id="result" class="result"></div>
+  <div class="card">
+    <h2>Live Prices</h2>
+    <p id="prices">Loading...</p>
+  </div>
+
+  <div id="result"></div>
 </div>
 
 <script src="script.js"></script>
